@@ -1,0 +1,5 @@
+Incident ID,Date,Source,Alert Summary,Priority,Initial Triage Notes,Status
+INC001,2025-08-18,Wazuh,Multiple failed VPN logins (brute force),Medium,User account locked, escalated to IAM,In Progress
+INC002,2025-08-18,EDR,Ransomware activity detected on Finance server,Critical,Host isolated, IR team engaged,Contained
+INC003,2025-08-18,Sysmon,Suspicious PowerShell script execution,High,Analyzed, script matched known malicious hash,Closed
+INC004,2025-08-18,Firewall,External port scan detected,Low,Logged only, no escalation,Closed
