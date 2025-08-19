@@ -1,0 +1,5 @@
+IOC,Type,Source,Threat Type,Confidence
+8.8.8.8,IP,OSINT-Custom,Suspicious DNS,Low
+malicious.com,Domain,AlienVault OTX,Phishing,High
+abc123hash,Hash,VirusTotal,Malware,Medium
+
