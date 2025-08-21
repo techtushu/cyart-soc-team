@@ -1,7 +1,6 @@
-| Alert ID | Description                                 | Source   | Priority | Action Taken                |
-| -------- | ------------------------------------------- | -------- | -------- | --------------------------- |
-| A001     | Brute force login attempts on VPN           | Wazuh    | Medium   | Escalated to IR team        |
-| A002     | Ransomware encryption detected on HR server | EDR      | Critical | Isolated host, IR initiated |
-| A003     | Suspicious PowerShell execution             | Sysmon   | High     | Investigated + blocked      |
-| A004     | External port scan detected                 | Firewall | Low      | Logged, no escalation       |
+| Alert ID | Type                  | Priority | MITRE Tactic (ID)                |
+| -------- | --------------------- | -------- | -------------------------------- |
+| 1        | sshd-session          | High     | Brute Force (T1110)              |
+| 2        | sudo and sudo caching | High     | Privilege Escalation (T1584.003) |
+| 3        | Phishing              | High     | Initial Access (T1566)           |
 
