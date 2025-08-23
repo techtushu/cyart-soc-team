@@ -1,0 +1,5 @@
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          E4968960F14B9BF72D2C4325C67ADC370037E67DB22B60FA624BD93190EE3834       C:\IR\output\memdump\uploads\auto\PhysicalMemory.dd
+---------       ----                                                                   ----
+SHA256          E7D8CA5B5E7373D46E233BE29A1EB5392BCE5EF2BF447D92A881DC6922F3EB6A       C:\IR\output\All Windows.Network.Netstat.csv
