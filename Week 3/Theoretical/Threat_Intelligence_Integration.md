@@ -1,29 +1,33 @@
 # 🌐 Threat Intelligence Integration
 
----
-
-## 📂 Types of Threat Intelligence
-| Type | Description | Example |
-|------|-------------|---------|
-| **IOCs** | Known malicious artifacts | IPs, domains, file hashes |
-| **TTPs** | Attacker behavior patterns | MITRE ATT&CK techniques |
-| **Feeds** | External TI sources | AlienVault OTX, MISP, STIX/TAXII |
+## 🎯 Key Objectives
+- 🔄 Integrate external TI feeds into the SOC  
+- ⚡ Enhance detection & enrichment  
+- 🔍 Enable proactive threat hunting  
 
 ---
 
-## 🏗 SOC Integration Workflow
-```mermaid
-flowchart TD
-A[Raw Alerts] --> B[Threat Feed Matching]
-B --> C[Enrichment]
-C --> D[Prioritized Alert]
+## 📡 TI Sources
+| Source 🌍          | Example Feed 📦          | Usage 🛠️                     |
+|---------------------|--------------------------|-------------------------------|
+| OTX                 | AlienVault OTX           | IPs, hashes, domains          |
+| MISP                | Community-driven MISP    | Threat actor campaigns        |
+| VirusTotal          | File/URL reputation      | Malware analysis              |
+| Commercial Feeds    | FireEye, Recorded Future | Advanced threat intelligence  |
 
-## Key Objectives
-- Improve detection and response with external intelligence.  
-- Prioritize alerts based on context.  
-- Transition from reactive → proactive threat hunting.  
+---
 
-## References
-- MITRE ATT&CK Matrix.  
-- OASIS STIX/TAXII Standards.  
-- AlienVault OTX feeds.  
+## ⚙️ SIEM Integration
+| Step 🔧           | Example ⚡                                | Benefit 🎯                 |
+|-------------------|-------------------------------------------|----------------------------|
+| IOC Enrichment    | Tag alert IP with "APT29 Infrastructure" | Context for triage         |
+| Automation        | Fetch daily IoCs via API                 | Reduce manual work         |
+| SOAR Playbook     | Block known IOC on firewall              | Faster containment         |
+
+---
+
+## ✅ Benefits
+- ⏱️ Faster alert triage  
+- 🎯 More accurate classification  
+- 🕵️ Stronger **proactive hunting**  
+

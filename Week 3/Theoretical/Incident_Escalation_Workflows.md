@@ -1,41 +1,42 @@
 # 🚨 Incident Escalation Workflows
 
----
-
-## 🏷 Escalation Tiers
-| Tier | Role | Responsibility |
-|------|------|----------------|
-| **Tier 1** | Analyst | Alert triage, basic investigation |
-| **Tier 2** | Investigator | Deep dive, correlation, log review |
-| **Tier 3** | Specialist/Threat Hunter | Advanced forensics, malware analysis |
+## 🎯 Key Objectives
+- ⚡ Escalate incidents efficiently  
+- ❌ Reduce false positives  
+- 📋 Standardize SOC response process  
 
 ---
 
-## 📊 Escalation Criteria
-- ⚡ **Severity** → Critical vs Low.  
-- 🧩 **Complexity** → Requires special skills/tools.  
-- 🏢 **Impact** → Business-critical systems affected.  
+## 🏷️ Escalation Levels
+| SOC Tier 🏢     | Role ⚡                          | Example Task 📌               |
+|-----------------|----------------------------------|--------------------------------|
+| Tier 1 (L1) 🟢 | Initial triage & enrichment      | Validate alert, check logs     |
+| Tier 2 (L2) 🟡 | In-depth analysis & correlation  | Malware analysis, pivoting     |
+| Tier 3 (L3) 🔴 | Advanced forensics & threat hunt | Reverse engineering, red team  |
 
 ---
 
-## 📡 Communication Protocol
-```mermaid
-sequenceDiagram
-    participant Tier1
-    participant Tier2
-    participant Tier3
-    participant Manager
-    Tier1->>Tier2: Escalate suspicious alert
-    Tier2->>Tier3: Request advanced analysis
-    Tier3->>Manager: Report confirmed incident
+## 🚩 Escalation Triggers
+| Trigger 🚨                  | Example 📌                      | Escalate To ⬆️ |
+|-----------------------------|----------------------------------|----------------|
+| Critical asset impacted     | DC compromised                  | Tier 2/3       |
+| Confirmed malicious activity| Known ransomware IOC detected    | Tier 2         |
+| Repeated high-sev alerts    | 10 brute-force alerts in 1 hour  | Tier 2         |
+| Compliance requirement      | PCI-DSS violation                | Tier 3         |
 
+---
 
-## Key Objectives
-- Escalate incidents with minimal delay.  
-- Standardize communication across SOC tiers.  
-- Integrate automation to reduce workload.  
+## 🛠️ Escalation Tools
+| Tool ⚙️        | Purpose 📝                     |
+|----------------|--------------------------------|
+| TheHive 🐝     | Case management                |
+| Cortex ⚙️     | Automated IOC enrichment       |
+| SOAR 🤖       | Automated workflow execution   |
 
-## References
-- NIST SP 800-61 Incident Handling Guide.  
-- SANS Incident Handler’s Handbook.  
-- Splunk SOAR documentation.  
+---
+
+## 🌟 Benefits
+- ⏱️ Reduced **MTTD / MTTR**  
+- 🤝 Better collaboration between SOC tiers  
+- 🚀 Stronger overall incident response capability  
+
