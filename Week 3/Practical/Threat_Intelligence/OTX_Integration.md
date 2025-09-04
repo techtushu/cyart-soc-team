@@ -1,1 +1,0 @@
-# OTX Integration Notes
