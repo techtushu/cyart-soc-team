@@ -1,6 +1,0 @@
-Question,Answer
-Why was the email opened?,User clicked malicious link
-Why was link clicked?,"Weak email filtering, poor awareness"
-Why was awareness poor?,No recent phishing simulation training
-Why was training missing?,Lack of scheduled security awareness plan
-Why was plan missing?,No formal governance over training
