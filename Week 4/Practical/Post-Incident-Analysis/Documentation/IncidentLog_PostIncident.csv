@@ -1,0 +1,2 @@
+IncidentID,IncidentStart,DetectionTimestamp,ResponseStart,ContainmentEnd,DetectionHours,ResponseHours,Notes
+PH-001,2025-09-01 09:00,2025-09-01 11:00,2025-09-01 11:15,2025-09-01 15:15,2,4,Mock phishing incident PH-001

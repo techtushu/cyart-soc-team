@@ -1,0 +1,6 @@
+Action Item,Owner,Priority,Due Date,Status
+"Improve email filtering (enable sandboxing, DKIM/SPF/DMARC)",SOC Engineering,High,2025-09-20,Open
+Launch phishing simulation program,Security Awareness Lead,High,2025-09-25,Open
+Create security training schedule,HR + Security,Medium,2025-09-30,Open
+Define governance for awareness plan,CISO / Compliance,Medium,2025-10-05,Open
+Review incident playbook,SOC Manager,Low,2025-10-10,Open
