@@ -1,0 +1,1 @@
+The mock incident analysis reveals a significant dwell time of 14 hours. This prolonged period allowed the threat actor to operate undetected within our network. Reducing dwell time is critical; we must improve our threat hunting capabilities and automate our detection mechanisms to identify compromises faster and minimize potential damage.
