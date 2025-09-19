@@ -1,0 +1,15 @@
+2025-09-19 09:42:11 [Wazuh-Manager] Alert ID: 005  
+Description: Suspicious File Download detected  
+Source IP: 192.168.1.102  
+Priority: High  
+Status: Open  
+
+[Automation] Triggered VirusTotal lookup for file hash: 44d88612fea8a8f36de82e1278abb02f  
+
+[VirusTotal Response]  
+- Detections: 56/70 engines flagged this file as Malicious  
+- Labels: Trojan.Generic, Worm.AutoRun, Malware.TestFile  
+- First Submission: 2004-08-01  
+- Last Analysis: 2025-09-19 09:41 UTC  
+
+[Action] Alert enriched with threat intelligence and marked as **Validated Malicious**.  
